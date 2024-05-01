@@ -33,7 +33,7 @@ import com.example.assignment1.ui.theme.YourScreen
 @RequiresApi(0)
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun SignUpPage(navController: NavController) {
+fun SigninPage(navController: NavController) {
     var username by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var confirmPassword by remember { mutableStateOf("") }
@@ -153,7 +153,7 @@ fun SignUpPage(navController: NavController) {
             }
 
             TextButton(
-                onClick = {navController.popBackStack()},
+                onClick = { navController.popBackStack() },
                 modifier = Modifier
                     .align(Alignment.CenterHorizontally)
                     .padding(top = 8.dp)
